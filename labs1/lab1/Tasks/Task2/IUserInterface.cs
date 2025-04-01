@@ -1,10 +1,10 @@
 ﻿namespace Task2
 {
-    interface IUserInterface
+    public interface IUserInterface
     {
-        int GetIntegerInput(string message);
-        double GetDoubleInput(string message);
-        string GetStringInput(string message);
+        int GetStrictlyPositiveInteger(string message);
+        double GetDouble(string message);
+        string GetNonEmptyString(string message);
         double[] GetDoubleArray(string message);
         void ShowMessage(string message);
     }

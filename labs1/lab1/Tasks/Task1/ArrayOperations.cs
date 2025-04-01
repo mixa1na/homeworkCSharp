@@ -1,10 +1,13 @@
-﻿namespace Task1
+﻿using System;
+using System.Linq;
+
+namespace Task1
 {
-    class ArrayOperations
+    public static class ArrayOperations
     {
         public static double[] GenerateArrayC(double[] arrayA, double[] arrayB, int index)
         {
-            List<double> newArray = new List<double>();
+            var newArray = new List<double>();
             int minIndexB = Array.IndexOf(arrayB, arrayB.Min());
             int minIndexA = Array.LastIndexOf(arrayA, arrayA.Min());
 
@@ -15,3 +18,4 @@
         }
     }
 }
+

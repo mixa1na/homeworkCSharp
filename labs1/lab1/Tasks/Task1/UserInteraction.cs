@@ -1,39 +1,55 @@
-﻿namespace Task1
+﻿using System;
+using System.Linq;
+
+namespace Task1
 {
-    class ConsoleInterface : IUserInterface
+    public class ConsoleInterface : IUserInterface
     {
-        public int GetIntegerInput(string message)
+        public int GetStrictlyPositiveInteger(string message)
         {
-            Console.Write(message + " ");
-            int value;
-            while (!int.TryParse(Console.ReadLine(), out value))
+            while (true)
             {
-                Console.WriteLine("Invalid input. Please enter an integer.");
+                Console.Write($"{message} ");
+
+                if (int.TryParse(Console.ReadLine(), out int value) && value > 0)
+                {
+                    return value;
+                }
+                Console.WriteLine("Size must be positive integer");
             }
-            return value;
         }
 
-        public double[] GetDoubleArray(string message, int expectedSize)
+        public double[] GetDoubleArray(string message, int requiredSize)
         {
-            Console.Write(message + " ");
-            double[] array;
+            Console.WriteLine($"{message} Enter exactly {requiredSize}");
+
             while (true)
             {
                 try
                 {
-                    array = Console.ReadLine().Split(' ').Select(double.Parse).ToArray();
-                    if (array.Length != expectedSize)
+                    var input = Console.ReadLine()?.Trim();
+                    if (string.IsNullOrEmpty(input))
                     {
-                        throw new Exception($"Expected {expectedSize} elements.");
+                        Console.WriteLine("Input can not be empty");
+                        continue;
                     }
-                    break;
+
+                    var numbers = input.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                                     .Select(double.Parse)
+                                     .ToArray();
+
+                    if (numbers.Length == requiredSize)
+                    {
+                        return numbers;
+                    }
+
+                    Console.WriteLine($"Enter exactly {requiredSize} numbers");
                 }
-                catch
+                catch (FormatException)
                 {
-                    Console.WriteLine("Invalid input. Please enter the correct size.");
+                    Console.WriteLine("Invalid number format");
                 }
             }
-            return array;
         }
 
         public void ShowMessage(string message)
@@ -43,7 +59,7 @@
 
         public void ShowArray(string name, double[] array)
         {
-            Console.WriteLine($"{name}: " + string.Join(", ", array));
+            Console.WriteLine($"{name}: {string.Join(" ", array)}");
         }
     }
 }

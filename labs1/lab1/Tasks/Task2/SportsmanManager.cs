@@ -4,81 +4,72 @@ using System.Linq;
 
 namespace Task2
 {
-    class SportsmanManager
+    public class SportsmanManager
     {
-        private List<Sportsman> sportsmen;
-        private IUserInterface ui;
+        private readonly List<Sportsman> _sportsmen = new();
+        private readonly IUserInterface _ui;
 
-        public SportsmanManager(IUserInterface userInterface)
+        public SportsmanManager(IUserInterface ui)
         {
-            this.ui = userInterface;
-            sportsmen = new List<Sportsman>();
+            _ui = ui;
         }
 
         public void InputSportsmen()
         {
-            int count = ui.GetIntegerInput("Enter the number of sportsmen:");
+            int count = _ui.GetStrictlyPositiveInteger("Enter number of sportsmen:");
 
             for (int i = 0; i < count; i++)
             {
-                ui.ShowMessage($"Sportsman {i + 1}:");
+                _ui.ShowMessage($"Sportsman {i + 1}");
+                string surname = _ui.GetNonEmptyString("Enter surname:");
+                int birthYear = _ui.GetStrictlyPositiveInteger("Enter birth year:");
+                double[] results = _ui.GetDoubleArray("Enter space-separated results :");
 
-                string surname;
-                do
-                {
-                    surname = ui.GetStringInput("Enter surname:");
-                } while (string.IsNullOrWhiteSpace(surname));
-
-                int birthYear = ui.GetIntegerInput("Enter birth year:");
-                double[] results = ui.GetDoubleArray("Enter competition results separated by space:");
-
-                sportsmen.Add(new Sportsman(surname, birthYear, results));
+                _sportsmen.Add(new Sportsman(surname, birthYear, results));
             }
         }
 
         public void DisplayAllSportsmen()
         {
-            ui.ShowMessage("\nList of sportsmen sorted by average result:");
-            var sorted = sportsmen.OrderBy(s => s.AverageResult).ToList();
-
-            foreach (var s in sorted)
-                ui.ShowMessage(s.ToString());
+            _ui.ShowMessage("All sportsmen sorted by average:");
+            foreach (var s in _sportsmen.OrderBy(s => s.AverageResult))
+            {
+                _ui.ShowMessage(s.ToString());
+            }
         }
 
         public void CountSportsmenInRange()
         {
-            double min = ui.GetDoubleInput("Enter minimum result:");
-            double max = ui.GetDoubleInput("Enter maximum result:");
+            double min = _ui.GetDouble("Enter minimum result:");
+            double max = _ui.GetDouble("Enter maximum result:");
 
-            var grouped = sportsmen
+            _ui.ShowMessage("Sportsmen in result range by birth year:");
+            foreach (var group in _sportsmen
+                .Where(s => s.AverageResult >= min && s.AverageResult <= max)
                 .GroupBy(s => s.BirthYear)
-                .Select(g => new
-                {
-                    Year = g.Key,
-                    Count = g.Count(s => s.AverageResult >= min && s.AverageResult <= max)
-                });
-
-            ui.ShowMessage("\nNumber of sportsmen in range by birth year:");
-            foreach (var g in grouped)
-                ui.ShowMessage($"Year {g.Year}: {g.Count} sportsmen");
+                .OrderBy(g => g.Key))
+            {
+                _ui.ShowMessage($"{group.Key}: {group.Count()} sportsmen");
+            }
         }
 
         public void DisplayYoungSportsmen()
         {
-            int ageLimit = ui.GetIntegerInput("Enter max age:");
+            int maxAge = _ui.GetStrictlyPositiveInteger("Enter maximum age:");
             int currentYear = DateTime.Now.Year;
+            var young = _sportsmen.Where(s => currentYear - s.BirthYear < maxAge).ToList();
 
-            var youngSportsmen = sportsmen.Where(s => (currentYear - s.BirthYear) < ageLimit).ToList();
-
-            if (youngSportsmen.Any())
+            if (young.Count == 0)
             {
-                ui.ShowMessage("\nYoung sportsmen:");
-                foreach (var s in youngSportsmen)
-                    ui.ShowMessage(s.ToString());
+                _ui.ShowMessage("No young sportsmen found.");
             }
             else
             {
-                ui.ShowMessage("No sportsmen younger than the specified age.");
+                _ui.ShowMessage($"Young sportsmen (<{maxAge} years):");
+                foreach (var s in young)
+                {
+                    _ui.ShowMessage(s.ToString());
+                }
             }
         }
     }

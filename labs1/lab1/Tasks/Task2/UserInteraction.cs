@@ -4,61 +4,74 @@ using System.Linq;
 
 namespace Task2
 {
-    class ConsoleInterface : IUserInterface
+    public class ConsoleInterface : IUserInterface
     {
-        public int GetIntegerInput(string message)
+        public int GetStrictlyPositiveInteger(string message)
         {
-            Console.Write(message + " ");
-            int value;
-            while (!int.TryParse(Console.ReadLine(), out value))
-            {
-                Console.WriteLine("Invalid input. Please enter integer.");
-            }
-            return value;
-        }
-
-        public double GetDoubleInput(string message)
-        {
-            Console.Write(message + " ");
-            double value;
+            Console.Write(message);
             while (true)
             {
-                string input = Console.ReadLine().Replace(",", ".");
-                if (double.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out value))
+                if (int.TryParse(Console.ReadLine(), out int value) && value > 0)
                 {
                     return value;
                 }
-                Console.WriteLine("Invalid input. Please enter a number.");
+                Console.WriteLine("Must be positive integer");
+            }
+        }
+
+        public double GetDouble(string message)
+        {
+            Console.Write(message);
+            while (true)
+            {
+                var input = Console.ReadLine()?.Replace(",", ".");
+                if (double.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out double value))
+                {
+                    return value;
+                }
+                Console.WriteLine("Invalid number format");
             }
         }
 
         public double[] GetDoubleArray(string message)
         {
-            Console.Write(message + " ");
-            double[] array;
+            Console.Write(message);
             while (true)
             {
                 try
                 {
-                    array = Console.ReadLine()
-                        .Replace(",", ".")
-                        .Split(' ')
+                    var input = Console.ReadLine()?.Replace(",", ".");
+                    var array = input?
+                        .Split(' ', StringSplitOptions.RemoveEmptyEntries)
                         .Select(x => double.Parse(x, CultureInfo.InvariantCulture))
                         .ToArray();
-                    break;
+
+                    if (array?.Length > 0)
+                    {
+                        return array;
+                    }
+
+                    Console.WriteLine("At least 1 result required");
                 }
-                catch
+                catch (FormatException)
                 {
-                    Console.WriteLine("Invalid input. Please enter numbers separated by spaces.");
+                    Console.WriteLine("Invalid number format");
                 }
             }
-            return array;
         }
 
-        public string GetStringInput(string message)
+        public string GetNonEmptyString(string message)
         {
-            Console.Write(message + " ");
-            return Console.ReadLine().Trim();
+            Console.Write(message);
+            while (true)
+            {
+                var input = Console.ReadLine()?.Trim();
+                if (!string.IsNullOrEmpty(input))
+                {
+                    return input;
+                }
+                Console.WriteLine("Input cannot be empty");
+            }
         }
 
         public void ShowMessage(string message)

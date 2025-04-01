@@ -1,6 +1,8 @@
-﻿namespace Task1
+﻿using System;
+
+namespace Task1
 {
-    class MathOperations
+    public static class MathOperations
     {
         public static double CalculateFunction(int a, int b, int c)
         {

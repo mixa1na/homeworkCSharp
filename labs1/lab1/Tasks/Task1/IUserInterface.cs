@@ -1,9 +1,9 @@
 ﻿namespace Task1
 {
-    interface IUserInterface
+    public interface IUserInterface
     {
-        int GetIntegerInput(string message);
-        double[] GetDoubleArray(string message, int expectedSize);
+        int GetStrictlyPositiveInteger(string message);
+        double[] GetDoubleArray(string message, int requiredSize);
         void ShowMessage(string message);
         void ShowArray(string name, double[] array);
     }
