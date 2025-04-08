@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs1\\lab1\\tasks\\task1\\userinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|solutionrelative:tasks\\task1\\userinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs1\\lab1\\tasks\\task2\\userinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|solutionrelative:tasks\\task2\\userinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs1\\lab1\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs1\\lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs1\\lab1\\tasks\\task2\\userinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|solutionrelative:tasks\\task2\\userinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs1\\lab1\\tasks\\task2\\sportsmanmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs1\\lab1\\tasks\\task2\\sportsman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|solutionrelative:tasks\\task2\\sportsman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs1\\lab1\\tasks\\task1\\userinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93E9BF25-78DF-4C53-A037-3A512116A775}|lab1.csproj|solutionrelative:tasks\\task1\\userinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,20 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SportsmanManager.cs",
-              "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task2\\SportsmanManager.cs",
-              "RelativeDocumentMoniker": "Tasks\\Task2\\SportsmanManager.cs",
-              "ToolTip": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task2\\SportsmanManager.cs",
-              "RelativeToolTip": "Tasks\\Task2\\SportsmanManager.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:48:11.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserInteraction.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task2\\UserInteraction.cs",
               "RelativeDocumentMoniker": "Tasks\\Task2\\UserInteraction.cs",
@@ -95,12 +82,11 @@
               "RelativeToolTip": "Tasks\\Task2\\UserInteraction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:48:36.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:48:36.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MathOperations.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task1\\MathOperations.cs",
               "RelativeDocumentMoniker": "Tasks\\Task1\\MathOperations.cs",
@@ -108,12 +94,11 @@
               "RelativeToolTip": "Tasks\\Task1\\MathOperations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:02:06.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T21:02:06.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -121,12 +106,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:22:04.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:22:04.508Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ArrayOperations.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task1\\ArrayOperations.cs",
               "RelativeDocumentMoniker": "Tasks\\Task1\\ArrayOperations.cs",
@@ -134,12 +118,36 @@
               "RelativeToolTip": "Tasks\\Task1\\ArrayOperations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:02:39.953Z",
+              "WhenOpened": "2025-03-30T21:02:39.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserInteraction.cs",
+              "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task1\\UserInteraction.cs",
+              "RelativeDocumentMoniker": "Tasks\\Task1\\UserInteraction.cs",
+              "ToolTip": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task1\\UserInteraction.cs",
+              "RelativeToolTip": "Tasks\\Task1\\UserInteraction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T21:02:58.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "SportsmanManager.cs",
+              "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task2\\SportsmanManager.cs",
+              "RelativeDocumentMoniker": "Tasks\\Task2\\SportsmanManager.cs",
+              "ToolTip": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task2\\SportsmanManager.cs",
+              "RelativeToolTip": "Tasks\\Task2\\SportsmanManager.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T17:48:11.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "IUserInterface.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task1\\IUserInterface.cs",
               "RelativeDocumentMoniker": "Tasks\\Task1\\IUserInterface.cs",
@@ -147,12 +155,11 @@
               "RelativeToolTip": "Tasks\\Task1\\IUserInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T09:29:34.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T09:29:34.345Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Logic.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task1\\Logic.cs",
               "RelativeDocumentMoniker": "Tasks\\Task1\\Logic.cs",
@@ -160,12 +167,11 @@
               "RelativeToolTip": "Tasks\\Task1\\Logic.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:01:43.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T21:01:43.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task1\\Program.cs",
               "RelativeDocumentMoniker": "Tasks\\Task1\\Program.cs",
@@ -173,12 +179,11 @@
               "RelativeToolTip": "Tasks\\Task1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:01:13.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T21:01:13.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IUserInterface.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task2\\IUserInterface.cs",
               "RelativeDocumentMoniker": "Tasks\\Task2\\IUserInterface.cs",
@@ -186,12 +191,11 @@
               "RelativeToolTip": "Tasks\\Task2\\IUserInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:48:45.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:48:45.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task2\\Program.cs",
               "RelativeDocumentMoniker": "Tasks\\Task2\\Program.cs",
@@ -199,12 +203,11 @@
               "RelativeToolTip": "Tasks\\Task2\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:27:11.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:27:11.012Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\MainMenu.cs",
               "RelativeDocumentMoniker": "MainMenu.cs",
@@ -212,12 +215,11 @@
               "RelativeToolTip": "MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:22:28.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:22:28.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Sportsman.cs",
               "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task2\\Sportsman.cs",
               "RelativeDocumentMoniker": "Tasks\\Task2\\Sportsman.cs",
@@ -225,25 +227,11 @@
               "RelativeToolTip": "Tasks\\Task2\\Sportsman.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:47:49.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:47:49.383Z"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserInteraction.cs",
-              "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task1\\UserInteraction.cs",
-              "RelativeDocumentMoniker": "Tasks\\Task1\\UserInteraction.cs",
-              "ToolTip": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs1\\lab1\\Tasks\\Task1\\UserInteraction.cs",
-              "RelativeToolTip": "Tasks\\Task1\\UserInteraction.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwC0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:02:58.046Z",
-              "EditorCaption": ""
             }
           ]
         }
