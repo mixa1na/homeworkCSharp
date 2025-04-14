@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs2\\Clock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{281C8B09-6368-445E-9479-7D9EDDEAA9C6}|Clock.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs2\\clock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{281C8B09-6368-445E-9479-7D9EDDEAA9C6}|Clock.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{281C8B09-6368-445E-9479-7D9EDDEAA9C6}|Clock.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs2\\clock\\timedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{281C8B09-6368-445E-9479-7D9EDDEAA9C6}|Clock.csproj|solutionrelative:timedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{281C8B09-6368-445E-9479-7D9EDDEAA9C6}|Clock.csproj|c:\\users\\mini\\documents\\github\\homeworkcsharp\\labs2\\clock\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{281C8B09-6368-445E-9479-7D9EDDEAA9C6}|Clock.csproj|solutionrelative:clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TimeData.cs",
+              "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs2\\Clock\\TimeData.cs",
+              "RelativeDocumentMoniker": "TimeData.cs",
+              "ToolTip": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs2\\Clock\\TimeData.cs",
+              "RelativeToolTip": "TimeData.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:27:06.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs2\\Clock\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs2\\Clock\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwDUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:26:56.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Clock.cs",
+              "DocumentMoniker": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs2\\Clock\\Clock.cs",
+              "RelativeDocumentMoniker": "Clock.cs",
+              "ToolTip": "C:\\Users\\mini\\Documents\\GitHub\\homeworkCSharp\\labs2\\Clock\\Clock.cs",
+              "RelativeToolTip": "Clock.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:21:37.737Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
