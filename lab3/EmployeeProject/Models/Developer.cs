@@ -1,4 +1,5 @@
 ﻿using EmployeeProject.Services;
+using EmployeeProject.Services.EmployeeProject;
 
 namespace EmployeeProject
 {
@@ -8,8 +9,8 @@ namespace EmployeeProject
     public class Developer : EmployeeWithFixedRate
     {
         /// <summary>
-        /// Initializes a new Developer
+        /// Initializes a new Developer instance
         /// </summary>
-        public Developer() : base(40m) { }
+        public Developer() : base(SalaryRates.DeveloperRate) { }
     }
 }

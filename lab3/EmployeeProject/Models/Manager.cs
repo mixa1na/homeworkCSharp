@@ -1,4 +1,5 @@
-﻿using EmployeeProject.Services;
+﻿using EmployeeProject.Services.EmployeeProject;
+using EmployeeProject.Services;
 
 namespace EmployeeProject
 {
@@ -8,8 +9,8 @@ namespace EmployeeProject
     public class Manager : EmployeeWithFixedRate
     {
         /// <summary>
-        /// Initializes a new Manager
+        /// Initializes a new Manager instance
         /// </summary>
-        public Manager() : base(50m) { }
+        public Manager() : base(SalaryRates.ManagerRate) { }
     }
 }

@@ -1,14 +1,10 @@
 ﻿namespace EmployeeProject
 {
     /// <summary>
-    /// Class representing an employee
+    /// Base class for all company employees
     /// </summary>
     public abstract class Employee
     {
-        /// <summary>
-        /// Maximum allowed working hours per month
-        /// </summary>
-        public const int MaxHours = 160;
         private int _hoursWorked;
 
         /// <summary>

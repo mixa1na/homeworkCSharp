@@ -1,4 +1,5 @@
 ﻿using EmployeeProject.Services;
+using EmployeeProject.Services.EmployeeProject;
 
 namespace EmployeeProject
 {
@@ -8,8 +9,8 @@ namespace EmployeeProject
     public class Intern : EmployeeWithFixedRate
     {
         /// <summary>
-        /// Initializes a new Intern
+        /// Initializes a new Intern instance
         /// </summary>
-        public Intern() : base(20m) { }
+        public Intern() : base(SalaryRates.InternRate) { }
     }
 }
