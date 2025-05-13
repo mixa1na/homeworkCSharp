@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="GraphicsLibrary\Image.cs" />
+    <Compile Include="GraphicsLibrary\ImageFormats\JpegImage.cs" />
+    <Compile Include="GraphicsLibrary\ImageFormats\PngImage.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+
+</Project>
