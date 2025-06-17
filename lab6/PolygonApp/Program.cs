@@ -6,8 +6,16 @@ namespace PolygonApp
     /// <summary>
     /// Main application class for polygon processing
     /// </summary>
-    class Program
+    static class Program
     {
+        private const string FileName = "polygons.txt";
+        private const string FileNotFoundMessage = "Error: File 'polygons.txt' not found in application directory";
+        private const string FileInstructions = "Please ensure the file exists in the same folder as the executable";
+        private const string NoPolygonsMessage = "No valid polygons found in the file";
+        private const string FileFormatMessage = "File format should be:";
+        private const string TriangleFormat = "triangle x1 y1 x2 y2 x3 y3 Color";
+        private const string RectangleFormat = "rectangle x1 y1 x2 y2 Color";
+
         /// <summary>
         /// Application entry point
         /// </summary>
@@ -17,14 +25,14 @@ namespace PolygonApp
             {
                 string filePath = Path.Combine(
                     AppDomain.CurrentDomain.BaseDirectory,
-                    "polygons.txt");
+                    FileName);
 
                 Console.WriteLine($"Looking for file at: {filePath}");
 
                 if (!File.Exists(filePath))
                 {
-                    Console.WriteLine("Error: File 'polygons.txt' not found in application directory");
-                    Console.WriteLine("Please ensure the file exists in the same folder as the executable");
+                    Console.WriteLine(FileNotFoundMessage);
+                    Console.WriteLine(FileInstructions);
                     return;
                 }
 
@@ -33,10 +41,10 @@ namespace PolygonApp
                 var polygons = service.ReadPolygonsFromFile(filePath);
                 if (polygons == null || polygons.Count == 0)
                 {
-                    Console.WriteLine("No valid polygons found in the file");
-                    Console.WriteLine("File format should be:");
-                    Console.WriteLine("triangle x1 y1 x2 y2 x3 y3 Color");
-                    Console.WriteLine("rectangle x1 y1 x2 y2 Color");
+                    Console.WriteLine(NoPolygonsMessage);
+                    Console.WriteLine(FileFormatMessage);
+                    Console.WriteLine(TriangleFormat);
+                    Console.WriteLine(RectangleFormat);
                     return;
                 }
 
@@ -58,13 +66,17 @@ namespace PolygonApp
         /// </summary>
         private static void ProcessPolygons(PolygonDataService service, List<Polygon> polygons)
         {
-            service.PrintPolygons(polygons, "Initial data:");
+            const string initialDataTitle = "Initial data:";
+            const string sortedDataTitle = "\nSorted by area:";
+            const string modifiedDataTitle = "\nAfter color modifications:";
+
+            service.PrintPolygons(polygons, initialDataTitle);
 
             polygons.Sort(new PolygonAreaComparer());
-            service.PrintPolygons(polygons, "\nSorted by area:");
+            service.PrintPolygons(polygons, sortedDataTitle);
 
             ModifySpecialTriangles(polygons);
-            service.PrintPolygons(polygons, "\nAfter color modifications:");
+            service.PrintPolygons(polygons, modifiedDataTitle);
         }
 
         /// <summary>

@@ -5,6 +5,9 @@
     /// </summary>
     public class Rectangle : Polygon
     {
+        private const int RequiredCoordinates = 4;
+        private const int PerimeterMultiplier = 2;
+
         /// <summary>
         /// Initializes rectangle with two corner points
         /// </summary>
@@ -28,7 +31,7 @@
         {
             int width = Math.Abs(vertices[2] - vertices[0]);
             int height = Math.Abs(vertices[3] - vertices[1]);
-            return 2 * (width + height);
+            return PerimeterMultiplier * (width + height);
         }
     }
 }

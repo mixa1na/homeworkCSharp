@@ -5,15 +5,17 @@
     /// </summary>
     public abstract class Polygon
     {
+        protected const int CoordinatesPerVertex = 2;
+
         /// <summary>
         /// Type of the polygon (e.g., "Triangle", "Rectangle")
         /// </summary>
-        protected string polygonType;
+        protected string polygonType = string.Empty;
 
         /// <summary>
         /// Array of vertex coordinates [x1,y1, x2,y2,...]
         /// </summary>
-        protected int[] vertices;
+        protected int[] vertices = Array.Empty<int>();
 
         /// <summary>
         /// Color for console output
@@ -35,8 +37,9 @@
         /// </summary>
         public virtual void PrintInfo(int index)
         {
+            const string formatString = "{0}\t{1}\t{2:F2}\t{3:F2}\t{4}";
             Console.ForegroundColor = color;
-            Console.WriteLine($"{index}\t{polygonType}\t{CalculatePerimeter():F2}\t{CalculateArea():F2}\t{color}");
+            Console.WriteLine(formatString, index, polygonType, CalculatePerimeter(), CalculateArea(), color);
             Console.ResetColor();
         }
     }

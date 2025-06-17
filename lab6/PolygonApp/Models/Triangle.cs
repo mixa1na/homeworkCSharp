@@ -5,6 +5,10 @@
     /// </summary>
     public class Triangle : Polygon
     {
+        private const int RequiredCoordinates = 6;
+        private const double AreaMultiplier = 0.5;
+        private const double RightAnglePrecision = 0.001;
+
         /// <summary>
         /// Initializes triangle with three vertex points
         /// </summary>
@@ -18,7 +22,7 @@
         /// <inheritdoc/>
         public override double CalculateArea()
         {
-            return 0.5 * Math.Abs(
+            return AreaMultiplier * Math.Abs(
                 (vertices[0] - vertices[4]) * (vertices[3] - vertices[1]) -
                 (vertices[0] - vertices[2]) * (vertices[5] - vertices[1]));
         }
@@ -41,9 +45,9 @@
             double b2 = Math.Pow(vertices[4] - vertices[2], 2) + Math.Pow(vertices[5] - vertices[3], 2);
             double c2 = Math.Pow(vertices[4] - vertices[0], 2) + Math.Pow(vertices[5] - vertices[1], 2);
 
-            return Math.Abs(a2 + b2 - c2) < 0.001 ||
-                   Math.Abs(a2 + c2 - b2) < 0.001 ||
-                   Math.Abs(b2 + c2 - a2) < 0.001;
+            return Math.Abs(a2 + b2 - c2) < RightAnglePrecision ||
+                   Math.Abs(a2 + c2 - b2) < RightAnglePrecision ||
+                   Math.Abs(b2 + c2 - a2) < RightAnglePrecision;
         }
 
         /// <summary>
@@ -51,9 +55,12 @@
         /// </summary>
         public bool IsInSecondQuadrant()
         {
-            for (int i = 0; i < vertices.Length; i += 2)
+            const int xThreshold = 0;
+            const int yThreshold = 0;
+
+            for (int i = 0; i < vertices.Length; i += CoordinatesPerVertex)
             {
-                if (vertices[i] >= 0 || vertices[i + 1] <= 0)
+                if (vertices[i] >= xThreshold || vertices[i + 1] <= yThreshold)
                     return false;
             }
             return true;
