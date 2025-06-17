@@ -1,9 +1,5 @@
-﻿using System;
-using System.Globalization;
-using System.IO;
-using System.Linq;
+﻿using System.Globalization;
 using HospitalPatientManagement.Models;
-using System.Collections.Generic;
 
 namespace HospitalPatientManagement
 {
@@ -107,7 +103,6 @@ namespace HospitalPatientManagement
         /// <summary>
         /// Loads patient data from a file.
         /// </summary>
-        /// <param name="fileName">The name of the file containing patient data.</param>
         private void LoadPatientsFromFile(string fileName)
         {
             try
@@ -134,8 +129,6 @@ namespace HospitalPatientManagement
         /// <summary>
         /// Parses a single line from the file into a Patient object.
         /// </summary>
-        /// <param name="line">The line to parse.</param>
-        /// <returns>The created Patient object or null if parsing fails.</returns>
         private Patient? ParsePatientLine(string line)
         {
             try
@@ -166,8 +159,6 @@ namespace HospitalPatientManagement
         /// <summary>
         /// Parses a date string in format dd.MM.yy.
         /// </summary>
-        /// <param name="dateStr">The date string to parse.</param>
-        /// <returns>A DateTime object.</returns>
         private static DateTime ParseDate(string dateStr)
         {
             return DateTime.ParseExact(dateStr, "dd.MM.yy", CultureInfo.InvariantCulture);
@@ -267,7 +258,6 @@ namespace HospitalPatientManagement
         /// <summary>
         /// Displays a list of patients.
         /// </summary>
-        /// <param name="patients">The array of patients to display.</param>
         private void DisplayPatientsArray(Patient[] patients)
         {
             Console.WriteLine("ID  Last Name      Diagnosis      Stay Age Department");
