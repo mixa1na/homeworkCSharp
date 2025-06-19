@@ -1,0 +1,15 @@
+Ivanov I.P.;12.03.1987;Aries;48-35-80
+Petrov A.V.;25.01.1989;Aquarius;74-68-54
+Sidorov K.M.;15.07.1990;Cancer;55-12-34
+Smirnov A.S.;21.04.1985;Taurus;23-45-67
+Kuznetsova E.V.;30.08.1992;Virgo;89-12-34
+Popov D.I.;05.11.1988;Scorpio;56-78-90
+Volkova M.N.;17.02.1995;Aquarius;34-56-78
+Orlov S.P.;22.06.1983;Cancer;12-34-56
+Lebedeva A.A.;09.09.1991;Virgo;78-90-12
+Sokolov V.V.;14.12.1980;Sagittarius;90-12-34
+Kozlov I.I.;19.01.1978;Capricorn;45-67-89
+Morozova T.P.;03.03.1984;Pisces;67-89-01
+Gusev P.P.;25.05.1986;Gemini;89-01-23
+Zaitseva O.O.;11.10.1993;Libra;01-23-45
+Vasiliev R.R.;08.08.1982;Leo;23-45-67

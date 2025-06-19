@@ -1,0 +1,4 @@
+Cancer:
+№ Last name Phone Date of birth
+1 Orlov S.P. 12-34-56 22.06.83
+2 Sidorov K.M. 55-12-34 15.07.90

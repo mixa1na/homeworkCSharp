@@ -1,5 +1,0 @@
-1 Smith Diabetes 16.03.08 29.03.08 42 Cardiology
-2 Johnson Obesity 01.01.08 20.01.08 38 Endocrinology
-3 Williams Angina 10.02.08 22.02.08 15 Cardiology
-4 Brown Flu 05.03.08 10.03.08 28 General
-5 Davis Asthma 15.01.08 30.01.08 10 Pulmonology

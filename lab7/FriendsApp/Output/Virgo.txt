@@ -1,0 +1,4 @@
+Virgo:
+№ Last name Phone Date of birth
+1 Kuznetsova E.V. 89-12-34 30.08.92
+2 Lebedeva A.A. 78-90-12 09.09.91
